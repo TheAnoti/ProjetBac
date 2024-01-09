@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aqua;
+}
+
+header {
+    width: 100vw;
+    height: 20vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header>h1, header>h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+header>h1{
+    font-size: 8vh;
+}
+header>h3 {
+    font-size: 6vh;
+}
+
+nav {
+    width: 100vw;
+    height: 10vh;
+    border-top: aqua;
+    background-color: black;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
