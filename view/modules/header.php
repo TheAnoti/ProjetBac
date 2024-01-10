@@ -6,4 +6,19 @@
         <h3>
             <?php echo $pageSubTitle ?>
         </h3>
-    </header>
+
+</header>
+<?php if(isset($_SESSION['nom'])){
+    ?>
+    <h2>Bojour <?php echo $_SESSION['nom'] ?></h2>
+    <?php
+}else{
+    ?>
+
+<form method="post" action="../controller/home.php">
+    <input name="nom" type= "text">
+    <input type="submit" value="votre nom">
+</form>
+<?php
+}
+?>

@@ -1,4 +1,8 @@
 <nav>
-        <a class="navButton" href="../controller/home.php">Acceuil</a>
-        <a class="navButton" href="../controller/book.php">Bibliothèque</a>
+        <?php 
+        foreach($buttonList as $button) {
+            ?>
+        <a class="navButton" href= "<?php echo $button['url']?>"><?php echo $button['label']?></a>
+        <?php
+        } ?>
     </nav>
