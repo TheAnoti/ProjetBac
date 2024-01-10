@@ -1,5 +1,6 @@
 <?php
-        
+        $pageTitle = "Silence on lit";
+        $pageSubTitle = "Lisons dans le calme tous ensemble, ça ne peut que faire du bien.";
 ?>
 
 

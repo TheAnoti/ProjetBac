@@ -1,5 +1,6 @@
 <?php
-        
+        $pageTitle = "Silence on lit";
+        $pageSubTitle = "Une heure de lecture est le souverain remède contre les dégoûts de la vie.";
 ?>
 
 <!DOCTYPE html>

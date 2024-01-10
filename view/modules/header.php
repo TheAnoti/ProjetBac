@@ -1,8 +1,9 @@
 <header>
         <h1>
-            Silence ont lit !
+            <?php echo $pageTitle ?>
+            
         </h1>
         <h3>
-            Ne parlez pas comme Alex, faites juste silence, n'est-ce pas Alex.
+            <?php echo $pageSubTitle ?>
         </h3>
     </header>
