@@ -1,3 +1,19 @@
+@font-face {
+    font-family:"Roadrage";
+    src: url("../Assets/Road_Rage.otf");
+
+}
+
+@font-face {
+    font-family:"Creamcake";
+    src: url("../Assets/Cream\ Cake.otf");
+}
+@font-face {
+    font-family: "londonpow";
+    src: url("../Assets/OldLondon.ttf");
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -62,4 +78,35 @@ nav {
     background-color: aqua;
     transform: translate(10px, 10px);
     transition: 250ms;
+}
+
+
+/*Tableau des livre*/
+
+.bookContainer {
+    width: 80vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    background-color: chocolate;
+    color: darkblue;
+    height: 3vh;
+    font-size: 2vh;
+    font-family: "londonpow";
+}
+.firstLine {
+    background-color: #774634;
+    color: white;
+    height: 5vh;
+    font-size: 3.5vh;
+    padding-top: 1vh;
+    font-family: londonpow;
 }

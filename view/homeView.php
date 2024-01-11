@@ -7,6 +7,7 @@
     <link rel= "stylesheet" href="../style/style.css">
 </head>
 <body>
+    
     <?php
         require_once('../view/modules/header.php');
         require_once('../view/modules/nav.php');
