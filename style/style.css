@@ -1,16 +1,16 @@
 @font-face {
     font-family:"Roadrage";
-    src: url("../Assets/Road_Rage.otf");
+    src: url("../asset/Road_Rage.otf");
 
 }
 
 @font-face {
     font-family:"Creamcake";
-    src: url("../Assets/Cream\ Cake.otf");
+    src: url("../asset/Cream\ Cake.otf");
 }
 @font-face {
     font-family: "londonpow";
-    src: url("../Assets/OldLondon.ttf");
+    src: url("../asset/Olondona.otf");
 }
 
 
@@ -36,7 +36,7 @@ header {
     align-items: center;
 }
 header>h1, header>h3 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:"Creamcake";
     color: #1b019b;
 }
 
@@ -64,7 +64,7 @@ nav {
     display: block;
     height: 7vh;
     width : 20vw;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "londonpow";
     font-size: 5vh;
     background-color:#774634;
     color:#1b019b;
@@ -108,5 +108,5 @@ nav {
     height: 5vh;
     font-size: 3.5vh;
     padding-top: 1vh;
-    font-family: londonpow;
+    font-family: "londonpow";
 }
