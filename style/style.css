@@ -36,7 +36,7 @@ header {
     align-items: center;
 }
 header>h1, header>h3 {
-    font-family:"Creamcake";
+    font-family:"londonpow";
     color: #1b019b;
 }
 
@@ -64,16 +64,19 @@ nav {
     display: block;
     height: 7vh;
     width : 20vw;
+    padding-top: 1vh;
     font-family: "londonpow";
     font-size: 5vh;
     background-color:#774634;
     color:#1b019b;
     text-align: center;
+    justify-content: center;
     border-radius: 5px;
     transition: 250ms;
 }
 
 .navButton:hover {
+    
     color: #1e4141;
     background-color: aqua;
     transform: translate(10px, 10px);
@@ -100,13 +103,63 @@ nav {
     color: darkblue;
     height: 3vh;
     font-size: 2vh;
-    font-family: "londonpow";
+    font-family: "Creamcake";
 }
-.firstLine {
+#firstLine {
     background-color: #774634;
     color: white;
     height: 5vh;
     font-size: 3.5vh;
     padding-top: 1vh;
-    font-family: "londonpow";
+    font-family: "Creamcake";
+}
+
+.articleContainer {
+    display : flex;
+    flex-direction : column;
+    justify-content: start;
+    width : 80vw;
+}
+
+.articleContainer>*:nth-child(1) {
+    align-self: flex-end;
+}
+
+.articleContainer>*:nth-child(2) {
+    align-self: flex-start;
+}
+
+.articleContainer>* {
+    width : 70vw;
+    background-color: var(--main-dark);
+    color : var(--main-light);
+    border-radius: 5px;
+    box-shadow: black 5px 5px 10px 0;
+    padding : 15px;
+    margin-bottom: 5vh;
+    text-align: justify;
+}
+.titre {
+    width : 30%;
+    text-align: center;
+}
+
+.auteur {
+    width : 20%;
+    text-align: center;
+}
+
+.genre{
+    width : 15%;
+    text-align: center;
+}
+
+.annee {
+    width : 15%;
+    text-align: center;
+}
+
+.detail {
+    width : 15%;
+    text-align: center;
 }

@@ -14,6 +14,23 @@
 
      
     <main>
+        <div class="filterContainer">
+            <form method="post" action="../controller/book.php">
+                <label for="selectedGenre">Choisissez un genre :</label>
+                <select name="selectedGenre" id="selectedGenre">
+                    <option value="tous"selected>Tous les livres</option>
+                    <?php 
+                foreach($genreList as $genre) {
+                ?>
+                    <option value="<?php echo $genre['nom']?>"><?php echo $genre['nom']?></option>
+                <?php
+                }?>
+                </select>
+                <input type="submit" value="Filter">
+            </form>
+        </div>
+
+
         <div class="bookContainer">
             <div class="line" id="firstLine">
                 <div class="titre">Titre</div>
@@ -22,6 +39,8 @@
                 <div class="annee">Année</div>
                 <div class="detail">Détail</div>
             </div>
+
+
             <?php
                 foreach($bookList as $book){
                 ?>
@@ -30,7 +49,12 @@
                 <div class="auteur"><?php echo $book ['auteur']?></div>
                 <div class="genre"><?php echo $book ['nom']?></div>
                 <div class="annee"><?php echo $book ['année']?></div>
-                <div class="detail"></div>
+                <div class="detail">
+                    <form method="post" action="../controller/bookDetail.php">
+                    <input type="hidden" name="bookId" value="<?php echo $book ['id']?>">  
+                    <input type="submit" value="voir détail">
+                    </form>
+                </div>
             </div>
                   <?php  
                 }?>

@@ -3,7 +3,18 @@
         require_once('../model/model.php');
 
         $bookBDD = connectDB();
-        $bookList = getAllBooks($bookBDD);
+        if(isset($_POST['selectedGenre'])) {
+            if($_POST['selectedGenre']=='tous') {
+                $bookList = getAllBooks($bookBDD);
+            }else{
+                $bookList = getBooksByGenre($bookBDD,$_POST['selectedGenre']);
+            }
+        }else{
+            $bookList = getAllBooks($bookBDD);
+            var_dump($bookBDD);
+        }
+
+        $genreList = getAllGenres($bookBDD);
 
         
 

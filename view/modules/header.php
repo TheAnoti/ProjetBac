@@ -10,7 +10,7 @@
 </header>
 <?php if(isset($_SESSION['nom'])){
     ?>
-    <h2>Bojour <?php echo $_SESSION['nom'] ?></h2>
+    <h2>Bonjour <?php echo $_SESSION['nom'] ?></h2>
     <?php
 }else{
     ?>
