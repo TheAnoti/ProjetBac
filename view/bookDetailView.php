@@ -18,7 +18,7 @@
                 <?php
                 $imagePath = "../asset/images/bookCover/";
                 if($bookInfo['photo'] == NULL) {
-                    $imagePath = $imagePath. 'defaut.jpg';
+                    $imagePath = $imagePath. 'default.jpg';
                 } else {
                     $imagePath = $imagePath.$bookInfo['photo'];
                 }?>
